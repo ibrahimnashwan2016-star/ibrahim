@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>حساب المعدل والتقدير</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 20px;
+            background-color: rgb(235, 250, 215);
+            color: rgb(162, 17, 188);
+            
+        }
+        fieldset {
+            width: 400px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 4px solid black;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 6px;
+            margin: 5px 0 10px 0;
+        }
+        input[type="submit"] {
+            padding: 8px 20px;
+            font-size: 16px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+</style>
+</head>
+<body>
+
+<h2>نموذج حساب المجموع والمعدل والتقدير</h2>
+
+<form action="1.php" method="post">
+    <fieldset>
+        <legend>بيانات الطالب</legend>
+        اسم المستخدم: <input type="text" name="username" required><br>
+        العمر: <input type="number" name="age" required><br>
+        الجنس:
+        <select name="gender" required>
+            <option value="">اختر</option>
+            <option value="ذكر">ذكر</option>
+            <option value="أنثى">أنثى</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>درجات المواد</legend>
+        القرآن: <input type="number" name="quran" min="0" max="100" required><br>
+        العلوم: <input type="number" name="science" min="0" max="100" required><br>
+        العربي: <input type="number" name="arabic" min="0" max="100" required><br>
+        الإسلامية: <input type="number" name="islamic" min="0" max="100" required><br>
+        الإنجليزي: <input type="number" name="english" min="0" max="100" required><br>
+    </fieldset>
+
+    <center><input type="submit" value="Addstudent" name="add"></center>
+</form>
+
+
+
+</body>
+</html>
+
